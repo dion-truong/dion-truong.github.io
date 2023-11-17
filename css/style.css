@@ -38,6 +38,7 @@ header {
     display: flex;
     margin-right: ;
     margin-left: 10%;
+    text-align: center;
 }
 
 .navbar li {
