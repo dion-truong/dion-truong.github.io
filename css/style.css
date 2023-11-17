@@ -36,9 +36,9 @@ header {
 .navbar {
     list-style-type: none;
     display: flex;
-    margin-right: ;
+    margin-right: 10%;
     margin-left: 10%;
-    text-align: center;
+
 }
 
 .navbar li {
@@ -54,6 +54,14 @@ header {
 .navbar a:hover {
     color: #61a0a8;
 }
+
+#menu {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+  
 
 .dropdown {
     position: relative;
