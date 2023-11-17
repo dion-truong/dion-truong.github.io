@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Robotica</title>
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Robotica</div>
+            <ul class="navbar">
+                <li><a href="index.html">Introductie</a></li>
+                <li><a href="Watisrobotica.html">Wat is robotica?</a></li>
+                <li><a href="Roboticaindetoekomst.html">Robotica in de toekomst</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Robotica-toepassingen</button>
+                    <div class="dropdown-content">
+                        <a href="Industrielerobots.html">Industriële robots</a>
+                        <a href="Medischerobots.html">Medische robots</a>
+                        <a href="Huishoudelijkerobots.html">Huishoudelijke robots</a>
+                        <a href="LORrobots.html">Ruimterobots</a>
+                    </div>
+                </li>
+					<li class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Duurzaamheid robots</button>
+                    <div class="dropdown-content">
+                        <a href="herbruikbaar.html">Herbruikbaarheid robots </a>
+                        <a href="millieutoepassing.html">Millieutoepassing van robots</a>
+                <li><a href="voorennadelen.html">Voor en nadelen Robotica</a></li>
+				  <li><a href="Contact.html">Contact</a></li>
+				</li>
+            </ul>
+        </nav>
+</header>
+
+    <div class="container">
+        <section>
+            <h1>Robotica in de toekomst</h1>
+            <p>Robots zijn nog best wel jong vooral als we het hebben over robots die echt zelf kunnen nadenken met A.I 
+			of robots die fysiek de zelfde dingen doen als mensen. In de toekomst verwachten we dat robots een grote rol 
+			gaan spelen in onze maatschappij op het gebied van arbeid maar ook het sociale gebied zoals een robot die je gezelschap houdt.
+			Aangezien Robots een best wel recente ontdekking is en we nu al zoveel kunnen met robots is het onvoorspelbaar voor wat er in
+			de toekomst op ons te wachten staat. Van robots die hele huizen bouwen tot robots die later misschien je echtgenoot kunnen worden,
+			het zou allemaal kunnen. We verwachten op het gebied van industrie en huishoudt nog veel meer ontwikkelingen, in de toekomst worden
+			waarschijnlijk alle huishoudens schoongemaakt door automatische robots en in de industrie wordt een groot deel overgenomen door robot
+			armen aangezien dit gewoon vele malen voordeliger is. 
+<br><br>
+Veel mensen zijn bang dat robots later de intelligent worden en de mensheid gaat overnemen dit komt omdat in sciencefiction verhalen robots
+ de mensheid helemaal uitroeit of gebruikt als slaafjes, maar in het echt is dat niet heel realistisch. Robots zijn geprogrammeerd om bepaalde taken
+ uit te voeren daarom missen ze de intentie en het bewustzijn om überhaupt op het idee te komen om de mensheid iets naars aan te doen. Het ligt eigenlijk
+ allemaal in de handen van de ontwerpers, het ligt eraan wat de doelen zijn van de ontwerper en hoe hij/zij de robot programmeert alleen als de ontwerper 
+ kwaadaardige bedoelingen heeft kan een robot echt de fout in gaan. </p>
+        </section>
+    </div>
+<nav>
+    <img src="robotcomputer.png" alt="Afbeelding" class="navbar-image">
+    <ul class="navbar">
+        <!-- Voeg hier de navigatiemenu-items toe -->
+    </ul>
+</nav>
+   <footer>
+	<h3> Deze pagina is gemaakt door: </h3>
+  <div class="column" 
+    <h3>Truong Nguyen</h3>
+    <h5>Some text..</h5>
+  </div>
+  <div class="column" 
+    <h3>Dion van den Berg</h3>
+	<div class="middle"
+    <h5>Some text..</h5>
+  </div>
+    </footer>
+	<script>
+// Functie om een specifieke dropdown te openen of te sluiten
+function toggleDropdown(button) {
+    var dropdownContent = button.nextElementSibling;
+    
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+
+// Eventlistener om te reageren op klikken op dropdownknoppen
+var dropdownButtons = document.querySelectorAll(".dropbtn");
+dropdownButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        toggleDropdown(button);
+    });
+});
+
+// Sluit de dropdown als er ergens anders op de pagina wordt geklikt
+window.addEventListener("click", function(event) {
+    var dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(function(dropdown) {
+        if (event.target !== dropdown && event.target !== button) {
+            dropdown.style.display = "none";
+        }
+    });
+});
+
+</script>
+</body>
+</html>
+

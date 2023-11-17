@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Robotica</title>
+</head>
+<body>
+  </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Robotica</div>
+            <ul class="navbar">
+                <li><a href="index.html">Introductie</a></li>
+                <li><a href="Watisrobotica.html">Wat is robotica?</a></li>
+                <li><a href="Roboticaindetoekomst.html">Robotica in de toekomst</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Robotica-toepassingen</button>
+                    <div class="dropdown-content">
+                        <a href="Industrielerobots.html">Industriële robots</a>
+                        <a href="Medischerobots.html">Medische robots</a>
+                        <a href="Huishoudelijkerobots.html">Huishoudelijke robots</a>
+                        <a href="LORrobots.html">Ruimterobots</a>
+                    </div>
+                </li>
+					<li class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">Duurzaamheid robots</button>
+                    <div class="dropdown-content">
+                        <a href="herbruikbaar.html">Herbruikbaarheid robots </a>
+                        <a href="millieutoepassing.html">Millieutoepassing van robots</a>
+                <li><a href="voorennadelen.html">Voor en nadelen Robotica</a></li>
+				  <li><a href="Contact.html">Contact</a></li>
+				</li>
+            </ul>
+        </nav>
+</header>
+
+    <div class="container">
+        <section>
+            <h1>Industriële robots</h1>
+            <p> <img class="image2" src="industrierobot.png" alt="robot">Robots kunnen tegenwoordig bijna overal voor worden ingezet, maar het meest komen ze voor in de industrie.
+			Vaak komen deze robots voor in de vorm van een soort kraanmachine met aan het uiteinde een grijphand.
+			Deze machines zijn heel handig om producten te maken doormiddel van verschillende stukken bij elkaar te zetten. <br> <br>
+			maar ze kunnen nog veel meer taken uitvoeren zoals:  
+lassen van auto-onderdelen, verpakken van producten, schilderen en afwerken van producten en nog veel meer! 
+Natuurlijk kunnen mensen dit ook maar robots zijn hier vele malen nauwkeuriger in en doen dit een stuk sneller. 
+Vaak zijn de werkomstandigheden ook niet ideaal voor het menselijk lichaam vanwege giftige stoffen of hoge tempraturen, robots hebben hier geen last van. 
+<br> <br> <img class="image4" src="robotarm.png" alt="robot"> 
+De allereerste industriële robot die ooit op de markt kwam werd in 1973 op de markt gezet de
+ <b>‘<a class="hyperlink" href="file:///C:/Users/dion/Desktop/PO%20informatica%202/IRB6.html">IRB 6</a>’ </b>
+ was ontworpen door ABB robotics en Kuka robotics. Deze robot kon bewegingen maken in 5 verschillende assen en had een hefvermogen van 6kg.
+ De IRB 6 werd vooral ingezet in de industrie, maar hij was natuurlijk niet zo efficiënt als de robots die we nu kennen. 
+<br> <br>
+De evolutie van robots ging sinds de eerste industriële robot razend snel en we ontdekken vandaag de dag nog steeds veel nieuwe dingen.
+ We begonnen bij robots die voorgeprogrammeerd werden om één bepaalde taak te herhalen, daarna kregen de robots een grote verbetering namelijk sensoren,
+ die zorgen ervoor dat de robots hun taken met veel meer precisie uitvoeren. Sinds kort maken robots gebruik van kunstmatige intelligentie 
+ dat zorgt ervoor dat ze zichzelf dingen aan kunnen leren en zich kunnen aanpassen aan verschillende taken of aan hun omgeving. </p>
+        </section>
+    </div>
+<nav>
+    <img src="robotcomputer.png" alt="Afbeelding" class="navbar-image">
+    <ul class="navbar">
+        <!-- Voeg hier de navigatiemenu-items toe -->
+    </ul>
+</nav>
+    <footer>
+	<h3> Deze pagina is gemaakt door: </h3>
+  <div class="column" 
+    <h3>Truong Nguyen</h3>
+    <h5>Some text..</h5>
+  </div>
+  <div class="column" 
+    <h3>Dion van den Berg</h3>
+	<div class="middle"
+    <h5>Some text..</h5>
+  </div>
+  <nav>
+    </footer>
+		<script>
+	// Functie om een specifieke dropdown te openen of te sluiten
+function toggleDropdown(button) {
+    var dropdownContent = button.nextElementSibling;
+    
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+
+// Eventlistener om te reageren op klikken op dropdownknoppen
+var dropdownButtons = document.querySelectorAll(".dropbtn");
+dropdownButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        toggleDropdown(button);
+    });
+});
+
+// Sluit de dropdown als er ergens anders op de pagina wordt geklikt
+window.addEventListener("click", function(event) {
+    var dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(function(dropdown) {
+        if (event.target !== dropdown && event.target !== button) {
+            dropdown.style.display = "none";
+        }
+    });
+});
+</script>
+</body>
+</html>
+
