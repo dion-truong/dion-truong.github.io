@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('achtergrond.jpg'); 
+    background-image: url('/images/achtergrond.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -3,41 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
     <title>Robotica</title>
 </head>
 <body>
- </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Robotica</div>
-            <ul class="navbar">
-                <li><a href="index.html">Introductie</a></li>
-                <li><a href="Watisrobotica.html">Wat is robotica?</a></li>
-                <li><a href="Roboticaindetoekomst.html">Robotica in de toekomst</a></li>
-                <li class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">Robotica-toepassingen</button>
-                    <div class="dropdown-content">
-                        <a href="Industrielerobots.html">Industriële robots</a>
-                        <a href="Medischerobots.html">Medische robots</a>
-                        <a href="Huishoudelijkerobots.html">Huishoudelijke robots</a>
-                        <a href="LORrobots.html">Ruimterobots</a>
-                    </div>
-                </li>
-					<li class="dropdown">
-                                    <button class="dropbtn" onclick="myFunction()">Duurzaamheid robots</button>
-                    <div class="dropdown-content">
-                        <a href="herbruikbaar.html">Herbruikbaarheid robots </a>
-                        <a href="millieutoepassing.html">Millieutoepassing van robots</a>
-                <li><a href="voorennadelen.html">Voor en nadelen Robotica</a></li>
-				  <li><a href="Contact.html">Contact</a></li>
-				</li>
-            </ul>
-        </nav>
-</header>
-
+    <div w3-include-html="/menu.html"></div>
 
     <div class="container">
         <section>
@@ -53,54 +24,9 @@
 			Robots zijn ook super duurzaam omdat ze vaak heel flexibel zijn, zo kan je als je een robot voor de ene taak niet. </p>
         </section>
     </div>
-<nav>
-    <img src="robotcomputer.png" alt="Afbeelding" class="navbar-image">
-    <ul class="navbar">
-        <!-- Voeg hier de navigatiemenu-items toe -->
-    </ul>
-</nav>
- <footer>
-	<h3> Deze pagina is gemaakt door: </h3>
-  <div class="column" 
-    <h3>Truong Nguyen</h3>
-    <h5>Some text..</h5>
-  </div>
-  <div class="column" 
-    <h3>Dion van den Berg</h3>
-	<div class="middle"
-    <h5>Some text..</h5>
-  </div>
-    </footer>
-		<script>
-	// Functie om een specifieke dropdown te openen of te sluiten
-function toggleDropdown(button) {
-    var dropdownContent = button.nextElementSibling;
-    
-    if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-    } else {
-        dropdownContent.style.display = "block";
-    }
-}
 
-// Eventlistener om te reageren op klikken op dropdownknoppen
-var dropdownButtons = document.querySelectorAll(".dropbtn");
-dropdownButtons.forEach(function(button) {
-    button.addEventListener("click", function() {
-        toggleDropdown(button);
-    });
-});
+    <div w3-include-html="/footer.html"></div>
 
-// Sluit de dropdown als er ergens anders op de pagina wordt geklikt
-window.addEventListener("click", function(event) {
-    var dropdowns = document.querySelectorAll(".dropdown-content");
-    dropdowns.forEach(function(dropdown) {
-        if (event.target !== dropdown && event.target !== button) {
-            dropdown.style.display = "none";
-        }
-    });
-});
-</script>
 </body>
 </html>
 
