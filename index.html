@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <script src="./js/script.js"></script>
     <title>Robotica</title>
 </head>
 <body>
-    <div w3-include-html="/menu.html"></div>
+    <header>
+        <nav class="menu">
+            <div class="logo">Robotica</div>
+            <ul class="navbar">
+                <li><a href="index.html">Introductie</a></li>
+                <li><a href="wat_is_robotica.html">Wat is robotica?</a></li>
+                <li><a href="robotica_in_de_toekomst.html">Robotica in de toekomst</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Robotica-toepassingen</button>
+                    <div class="dropdown-content">
+                        <a href="industriele_robots.html">Industriële robots</a>
+                        <a href="medische_robots.html">Medische robots</a>
+                        <a href="huishoudelijke_robots.html">Huishoudelijke robots</a>
+                        <a href="lor_robots.html">Ruimterobots</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Duurzaamheid robots</button>
+                    <div class="dropdown-content">
+                        <a href="herbruikbaar.html">Herbruikbaarheid robots </a>
+                        <a href="millieu_toepassing.html">Millieutoepassing van robots</a>
+                <li><a href="voor_en_nadelen.html">Voor en nadelen Robotica</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <section>
@@ -20,11 +46,20 @@
 		maar wat is robotica eigenlijk en waar wordt het voor gebruikt? Dit zijn een paar
 		van de vele vragen die wij gaan beantwoorden met onze website!
     </p> 
-	<img class="image3" src="/images/meerdererobot.png" alt="robot">
+	<img class="image3" src="./images/meerdererobot.png" alt="robot">
 	</section>
     </div>
 
-    <div w3-include-html="/footer.html"></div>
+    <nav>
+        <img src="./images/robotcomputer.png" alt="Afbeelding" class="navbar-image">
+        <ul class="navbar">
+        </ul>
+    </nav>
+    
+    <footer>
+        <br>
+        <p>&copy; 2023 Truong Nguyen & Dion van den Berg B.V.. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

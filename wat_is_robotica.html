@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <title>Wat is robotica?</title>
 </head>
 <body>
 
-    <div w3-include-html="/menu.html"></div>
+    <header>
+        <nav class="menu">
+            <div class="logo">Robotica</div>
+            <ul class="navbar">
+                <li><a href="index.html">Introductie</a></li>
+                <li><a href="wat_is_robotica.html">Wat is robotica?</a></li>
+                <li><a href="robotica_in_de_toekomst.html">Robotica in de toekomst</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Robotica-toepassingen</button>
+                    <div class="dropdown-content">
+                        <a href="industriele_robots.html">Industriële robots</a>
+                        <a href="medische_robots.html">Medische robots</a>
+                        <a href="huishoudelijke_robots.html">Huishoudelijke robots</a>
+                        <a href="lor_robots.html">Ruimterobots</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Duurzaamheid robots</button>
+                    <div class="dropdown-content">
+                        <a href="herbruikbaar.html">Herbruikbaarheid robots </a>
+                        <a href="millieu_toepassing.html">Millieutoepassing van robots</a>
+                <li><a href="voor_en_nadelen.html">Voor en nadelen Robotica</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <section>
             <h1>Wat is robotica?</h1>
-            <p>  <img class="image" src="/images/vraagteken1.png" alt="robot"> Robotica is een tak in de wetenschap die zich bezighoudt 
+            <p>  <img class="image" src="./images/vraagteken1.png" alt="robot"> Robotica is een tak in de wetenschap die zich bezighoudt 
 			met het theoretische systeem achter robots en het gebruiken van robots in de praktijk.
 			<p>
 			Robots zijn geprogrammeerde machines die niet alleen informatie verwerken,
  maar ook echt fysieke bewegingen uit kunnen voeren. Het unieke aan robots 
  is dat ze niet persé 100% door mensen worden geprogrammeerd, maar dat ze soms gebruik maken
- van  <b>‘<a class="hyperlink" href="/ai.html">A.I.</a>’ </b> waardoor ze zichzelf ook kunnen ontwikkelen en dingen aan kunnen leren. <br><br>
+ van  <b>‘<a class="hyperlink" href="./ai.html">A.I.</a>’ </b> waardoor ze zichzelf ook kunnen ontwikkelen en dingen aan kunnen leren. <br><br>
 Het allereerste goed werkende robot ooit is op 1937 gemaakt. Dit was een kraanachtig
  apparaat dat bewegingen kon maken in 5verschillende assen en had een soort grijphand
  waarmee die om zijn eigen as kon draaien. Deze robot kon niet veel het werd  aangedreven 
@@ -33,7 +59,16 @@ Het allereerste goed werkende robot ooit is op 1937 gemaakt. Dit was een kraanac
         </section>
     </div>
 	
-<div w3-include-html="/footer.html"></div>
+    <nav>
+        <img src="./images/robotcomputer.png" alt="Afbeelding" class="navbar-image">
+        <ul class="navbar">
+        </ul>
+    </nav>
+    
+    <footer>
+        <br>
+        <p>&copy; 2023 Truong Nguyen & Dion van den Berg B.V.. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
